@@ -149,7 +149,15 @@ nav{
     font-weight: 700;
 }
 
-
+/* Footer Section */
+.footer{
+    text-align: center;
+    color: #FFF;
+    padding: 30px;
+    background-color:#0A0826 ;
+    font-size: 1.5em;
+    margin-top: 50px;
+}
 
 
 
