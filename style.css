@@ -18,6 +18,7 @@ nav{
     color: #3A3A3A;
     font-size: 18px;
     font-weight: 600;
+    cursor: pointer;
 }
 .nav-tittle h3{
     color: #3A3A3A;
@@ -60,10 +61,92 @@ nav{
     color: #FFF;
     font-size: 16px;
     font-weight: 700;
-    padding: 10px 20px;
+    padding: 20px 25px;
     border: none;
     border-radius: 40px;
-    margin-top: 30px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+ /* Sponsor Part */
+.sponsor{
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    margin: auto;
+    margin-top: 100px;
+}
+
+/* collection part */
+
+.collection-heading{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    color: #3A3A3A;
+    margin-top: 150px;
+}
+.collection-items{
+    width: 60%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,400px);
+    gap: 30px;
+}
+.item-details{
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+    padding-bottom: 20px;
+}
+.item-details img{
+    width: 100%;
+}
+.item-details p{
+    margin-top: 0px;
+}
+.item-details h4{
+    color: #3A3A3A;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0px;
+    margin-bottom: 7px;
+    text-decoration: underline;
+}
+.price{
+    color: black;
+    font-size: 22px;
+}
+.star-icon{
+    color: #FB8200;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: -20px;
+}
+
+/* Featured Products Part */
+.feature-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    margin: auto;
+    gap: 50px;
+    margin-top: 100px;
+}
+.feature-container img{
+    width: 400px;
+}
+.feature-container h2{
+    color: black;
+    font-size: 35px;
+    font-weight: 700;
+}
+.feature-container p{
+    color: #3A3A3A;
+    font-size: 16px;
+    font-weight: 700;
 }
 
 
@@ -71,9 +154,9 @@ nav{
 
 
 
-
-
 /* Media Queries */
+
+
 @media screen  and (max-width:576px){
     nav,.nav-item{
         display: flex;
@@ -91,6 +174,30 @@ nav{
         width: 100%;
         background-size: 100%;
     }
+    .sponsor{
+        display:flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: auto;
+        margin-top: 50px;
+        gap: 10px;
+    }
+    .collection-items{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        width: 80%;
+        margin: auto;
+    }
+    .item-details img{
+        width: 100%;
+    }
+    .feature-container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .feature-container img{
+        width: 100%;
+    }
 }
 
 @media screen and (min-width:576px) and (max-width:960px){
@@ -101,14 +208,37 @@ nav{
     .banner-container{
         display: flex;
         flex-direction: column;
-        gap: 50px
-        ;
+        gap: 50px;
         text-align: center;
     }
     .nav-item{
         text-align: center;
     }
     .banner-image img{
+        width: 100%;
+    }
+    .sponsor{
+        display:flex;
+        flex-wrap: wrap;
+        width: 60%;
+        margin: auto;
+        gap: 10px;
+        
+    }
+    .collection-items{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 80%;
+        margin: auto;
+    }
+    .item-details img{
+        width: 100%;
+    }
+    .feature-container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .feature-container img{
         width: 100%;
     }
 }
